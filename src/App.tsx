@@ -221,7 +221,7 @@ export default function App() {
           <button className="profile" onClick={() => setOverlay("settings")}>
             <div className="avatar">JD</div>
             <span>
-              Jordan Davis<small>Security analyst · Demo</small>
+              Vaibhav Thakur<small>Security analyst · Demo</small>
             </span>
             <Settings2 size={16} />
           </button>

@@ -219,7 +219,7 @@ export default function App() {
             <Wifi size={14} />
           </div>
           <button className="profile" onClick={() => setOverlay("settings")}>
-            <div className="avatar">JD</div>
+            <div className="avatar">VK</div>
             <span>
               Vaibhav Thakur<small>Security analyst · Demo</small>
             </span>
@@ -276,7 +276,7 @@ export default function App() {
             >
               <CircleHelp size={18} />
             </button>
-            <div className="avatar small">JD</div>
+            <div className="avatar small">VK</div>
           </div>
         </header>
         <main className="content">

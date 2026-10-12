@@ -1,0 +1,1750 @@
+.intel-page,
+.vpn-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--text, #edf2fa);
+  font-size: 13px;
+}
+.intel-panel {
+  background: var(--panel, #101725);
+  border: 1px solid var(--line, #223047);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.intel-page button,
+.vpn-page button,
+.intel-page input,
+.vpn-page input,
+.intel-page select,
+.vpn-page select {
+  font: inherit;
+}
+.intel-page button,
+.vpn-page button {
+  cursor: pointer;
+}
+.intel-page button:focus-visible,
+.vpn-page button:focus-visible,
+.intel-page input:focus-visible,
+.vpn-page input:focus-visible,
+.intel-page select:focus-visible,
+.vpn-page select:focus-visible {
+  outline: 2px solid var(--accent, #ccff6b);
+  outline-offset: 3px;
+}
+.intel-overview {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 196px;
+  padding: 29px 32px;
+  overflow: hidden;
+  border: 1px solid #2a3d30;
+  border-radius: 12px;
+  background:
+    radial-gradient(ellipse at 65% 45%, #182b25 0%, transparent 42%),
+    linear-gradient(120deg, #121d23, #101725 65%);
+}
+.intel-overview-copy {
+  position: relative;
+  z-index: 1;
+}
+.intel-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent, #ccff6b);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  line-height: 1.5;
+}
+.intel-overview h2 {
+  margin: 12px 0 9px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+}
+.intel-overview p {
+  margin: 0;
+  color: #9caac0;
+  line-height: 1.6;
+}
+.intel-source-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  margin-top: 19px;
+  color: #91a59c;
+  font-size: 10px;
+}
+.intel-source-pill > span:first-child {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent, #ccff6b);
+}
+.intel-source-separator {
+  color: #50655b;
+  margin: 0 2px;
+}
+.intel-overview-metrics {
+  display: flex;
+  gap: 30px;
+  z-index: 1;
+}
+.intel-overview-metrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  min-width: 105px;
+}
+.intel-overview-metrics strong {
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+.intel-overview-metrics span {
+  font-size: 10px;
+  color: #8c9cae;
+}
+.intel-orbit {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+  display: grid;
+  place-items: center;
+  color: #ccff6b;
+  opacity: 0.55;
+}
+.intel-orbit-ring {
+  position: absolute;
+  border: 1px solid #638245;
+  border-radius: 50%;
+}
+.intel-ring-one {
+  width: 90px;
+  height: 90px;
+}
+.intel-ring-two {
+  width: 135px;
+  height: 135px;
+  opacity: 0.5;
+}
+.intel-ring-three {
+  width: 180px;
+  height: 180px;
+  opacity: 0.3;
+}
+.intel-orbit i,
+.intel-orbit b,
+.intel-orbit em {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ccff6b;
+  box-shadow: 0 0 10px #ccff6b;
+}
+.intel-orbit i {
+  top: 27px;
+  right: 59px;
+}
+.intel-orbit b {
+  bottom: 22px;
+  left: 30px;
+}
+.intel-orbit em {
+  top: 65px;
+  left: 3px;
+}
+.intel-feed-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 19px;
+  border: 1px solid var(--line, #223047);
+  border-radius: 9px;
+  background: #0d1420;
+  color: #7e8fa7;
+}
+.intel-feed-strip > svg {
+  color: #a7b5c8;
+}
+.intel-feed-strip > div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+}
+.intel-feed-strip strong {
+  font-size: 11px;
+  color: #d2dbe8;
+  font-weight: 500;
+}
+.intel-feed-strip span {
+  font-size: 11px;
+}
+.intel-curated-tag {
+  color: #abb6cc;
+  background: #192235;
+  border: 1px solid #29374e;
+  padding: 5px 8px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-size: 8px !important;
+  white-space: nowrap;
+}
+.intel-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 332px;
+  gap: 20px;
+  align-items: start;
+}
+.intel-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 21px 23px 17px;
+}
+.intel-panel-heading h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  letter-spacing: -0.2px;
+}
+.intel-panel-heading p {
+  font-size: 11px;
+  color: var(--muted, #8491a8);
+  margin: 0;
+}
+.intel-icon-button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: 1px solid #2b384b;
+  border-radius: 6px;
+  background: #172131;
+  color: #a4b1c5;
+}
+.intel-icon-button:hover {
+  color: var(--accent, #ccff6b);
+  border-color: #607448;
+  background: #1a2834;
+}
+.intel-toolbar {
+  display: flex;
+  gap: 10px;
+  padding: 0 23px 16px;
+}
+.intel-search {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #29364b;
+  background: #0d1420;
+  border-radius: 6px;
+  padding: 9px 11px;
+  color: #728299;
+  min-width: 0;
+  flex: 1;
+}
+.intel-search input {
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none !important;
+  color: #dce5f2;
+  font-size: 11px;
+}
+.intel-search input::placeholder {
+  color: #708099;
+}
+.intel-toolbar select {
+  border: 1px solid #29364b;
+  border-radius: 6px;
+  padding: 9px 10px;
+  background: #141e2e;
+  color: #b2bfd2;
+  font-size: 11px;
+  max-width: 175px;
+}
+.intel-tabs {
+  display: flex;
+  gap: 22px;
+  border-bottom: 1px solid #253047;
+  padding: 0 23px;
+}
+.intel-tabs button {
+  padding: 0 0 12px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  color: #8190a7;
+  font-size: 11px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.intel-tabs button.active {
+  color: #ccff6b;
+  border-bottom-color: #ccff6b;
+}
+.intel-tabs span {
+  font-size: 9px;
+  background: #1e2a3a;
+  color: #91a0b6;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+.intel-tabs button.active span {
+  background: #2b3b29;
+  color: #ccff6b;
+}
+.intel-table-scroll {
+  overflow: auto;
+}
+.intel-table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+  text-align: left;
+}
+.intel-table th {
+  font-size: 8px;
+  font-weight: 500;
+  color: #718099;
+  letter-spacing: 1px;
+  padding: 15px 15px;
+  border-bottom: 1px solid #253047;
+}
+.intel-table th:first-child,
+.intel-table td:first-child {
+  padding-left: 23px;
+}
+.intel-table th:last-child,
+.intel-table td:last-child {
+  padding-right: 23px;
+}
+.intel-table td {
+  padding: 16px 15px;
+  border-bottom: 1px solid #1d2a3c;
+  font-size: 11px;
+}
+.intel-table tbody tr {
+  cursor: pointer;
+  transition: background 0.16s;
+}
+.intel-table tbody tr:hover {
+  background: #172336;
+}
+.intel-table tbody tr.selected {
+  background: #17251f;
+}
+.intel-indicator-select {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  text-align: left;
+}
+.intel-type-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 31px;
+  height: 33px;
+  border: 1px solid #304053;
+  background: #192636;
+  border-radius: 6px;
+  color: #8199bc;
+}
+.intel-type-icon.hash {
+  color: #b6a1de;
+  background: #241f36;
+  border-color: #403452;
+}
+.selected .intel-type-icon {
+  color: #b4d479;
+  background: #223423;
+  border-color: #3f5436;
+}
+.intel-indicator-select strong {
+  display: block;
+  max-width: 205px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 10px;
+}
+.intel-indicator-select small {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  color: #7f8ca2;
+  font-size: 9px;
+}
+.intel-risk {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 7px;
+  border-radius: 4px;
+  font-size: 9px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.intel-risk:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.intel-risk-critical {
+  color: #ff8e8e;
+  background: #482530;
+}
+.intel-risk-high {
+  color: #ffb787;
+  background: #3d2c23;
+}
+.intel-risk-medium {
+  color: #e7cf85;
+  background: #352e20;
+}
+.intel-table-tactic {
+  color: #a0acc0;
+  font-size: 10px;
+}
+.intel-muted-cell {
+  color: #7f8ca2;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 9px !important;
+}
+.intel-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px 23px;
+  color: #718198;
+  font-size: 9px;
+}
+.intel-table-footer span:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.intel-detail {
+  padding: 22px;
+}
+.intel-detail-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.intel-detail-top .intel-eyebrow {
+  color: #8393aa;
+  font-size: 8px;
+  letter-spacing: 1.4px;
+}
+.intel-detail-icon {
+  display: grid;
+  place-items: center;
+  margin: 21px 0 16px;
+  width: 53px;
+  height: 53px;
+  border-radius: 10px;
+  border: 1px solid #3e5143;
+  color: #ccff6b;
+  background: linear-gradient(130deg, #29392b, #16271e);
+}
+.intel-detail-value {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+.intel-detail-value h3 {
+  margin: 0;
+  flex: 1;
+  overflow-wrap: anywhere;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+.intel-detail-value .intel-icon-button {
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border-color: #233147;
+}
+.intel-detail-type {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 23px;
+  color: #8191a8;
+  font-size: 9px;
+}
+.intel-detail-type > span {
+  color: #43526a;
+}
+.intel-confidence > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #90a0b6;
+  margin-bottom: 9px;
+}
+.intel-confidence strong {
+  color: #ccff6b;
+  font-size: 12px;
+  font-weight: 500;
+}
+.intel-progress {
+  background: #233027;
+  height: 4px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.intel-progress > span {
+  display: block;
+  background: #ccff6b;
+  height: 100%;
+  border-radius: 3px;
+}
+.intel-confidence small {
+  display: block;
+  font-size: 8px;
+  color: #61718a;
+  line-height: 1.4;
+  margin-top: 7px;
+}
+.intel-detail-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 16px 0;
+  border-top: 1px solid #263347;
+  border-bottom: 1px solid #263347;
+}
+.intel-detail-stats > div {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 6px 5px;
+  color: #8192aa;
+}
+.intel-detail-stats strong {
+  font-weight: 500;
+  color: #cfdae8;
+  font-size: 11px;
+}
+.intel-detail-stats span {
+  grid-column: 2;
+  font-size: 8px;
+  color: #75869f;
+}
+.intel-context-block {
+  margin-top: 20px;
+}
+.intel-small-label {
+  display: block;
+  color: #71849e;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  margin-bottom: 9px;
+}
+.intel-context-block > strong {
+  font-size: 11px;
+  font-weight: 500;
+  color: #d2dbea;
+}
+.intel-context-block p {
+  margin: 8px 0 0;
+  font-size: 10px;
+  color: #91a0b7;
+  line-height: 1.75;
+}
+.intel-investigate {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 12px;
+  border: 1px solid #263e34;
+  border-radius: 7px;
+  background: #15241f;
+  color: #bce898;
+}
+.intel-investigate > svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.intel-investigate strong {
+  font-size: 10px;
+  font-weight: 500;
+  color: #bfe49e;
+}
+.intel-investigate p {
+  margin-top: 5px;
+  font-size: 9px;
+  color: #95ab9f;
+}
+.intel-watch-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 11px;
+  background: #ccff6b;
+  color: #172314;
+  border: 1px solid #ccff6b;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.intel-watch-button.watched {
+  background: #1b2922;
+  color: #bfda9f;
+  border-color: #3a533b;
+}
+.intel-watch-button:hover {
+  filter: brightness(1.08);
+}
+.intel-footnote {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: #647791;
+  font-size: 10px;
+  line-height: 1.6;
+}
+.intel-footnote > svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.intel-empty {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 45px 20px;
+  color: #7d90a8;
+}
+.intel-empty strong {
+  font-size: 13px;
+  color: #afbdd1;
+  font-weight: 500;
+}
+.intel-empty p {
+  font-size: 11px;
+  margin: 0;
+  text-align: center;
+}
+.intel-notice {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(560px, calc(100vw - 40px));
+  padding: 15px 18px;
+  background: #1d2f27;
+  border: 1px solid #5d7744;
+  border-radius: 8px;
+  color: #d3eabd;
+  font-size: 12px;
+  box-shadow: 0 10px 40px #0008;
+  line-height: 1.5;
+}
+.intel-notice > svg {
+  flex-shrink: 0;
+}
+.intel-notice button {
+  color: #a4b692;
+  background: none;
+  border: 0;
+  font-size: 22px;
+  margin-left: 8px;
+  line-height: 1;
+}
+.vpn-status-strip {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 2px;
+  color: #7f90a8;
+  font-size: 10px;
+}
+.vpn-status-strip > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.vpn-status-strip b {
+  margin-left: auto;
+  color: #8a9db8;
+  font-weight: 500;
+  font-size: 8px;
+  letter-spacing: 1px;
+  border: 1px solid #2b3b51;
+  background: #162130;
+  padding: 5px 7px;
+  border-radius: 4px;
+}
+.vpn-status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ccff6b;
+  box-shadow: 0 0 8px #ccff6b66;
+}
+.vpn-top-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 308px;
+  gap: 20px;
+}
+.vpn-route-panel {
+  background: radial-gradient(ellipse at 50% 40%, #152031, #101725);
+}
+.vpn-route-panel .intel-panel-heading {
+  padding-bottom: 6px;
+  align-items: center;
+}
+.vpn-route-panel .intel-eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  color: #91a0b7;
+  margin-bottom: 9px;
+}
+.vpn-route-panel .intel-panel-heading h3 {
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  margin: 0;
+}
+.vpn-alert-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  font-size: 9px;
+  color: #f6bc82;
+  border: 1px solid #604732;
+  background: #322821;
+  border-radius: 5px;
+  padding: 6px 8px;
+}
+.vpn-world-map {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 215px;
+}
+.vpn-route-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 17px 23px;
+  border-top: 1px solid #253047;
+  font-size: 9px;
+  color: #8293ac;
+  white-space: nowrap;
+}
+.vpn-route-summary > div,
+.vpn-route-summary > div > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.vpn-route-summary > div > svg {
+  color: #b9cf98;
+}
+.vpn-route-summary strong {
+  font-weight: 500;
+  color: #d0daea;
+}
+.vpn-route-summary .vpn-same-ip {
+  padding: 5px 7px;
+  background: #1b2934;
+  border-radius: 4px;
+  color: #a9bfd1;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 8px;
+}
+.vpn-calculator {
+  padding: 23px;
+}
+.vpn-calculator .intel-eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.4px;
+}
+.vpn-calculator h3 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  margin: 16px 0 7px;
+}
+.vpn-calculator > p {
+  font-size: 10px;
+  color: #8799b1;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+.vpn-input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.vpn-calculator label {
+  display: block;
+  position: relative;
+  font-size: 9px;
+  line-height: 1.5;
+  color: #8c9cb2;
+}
+.vpn-calculator label > span {
+  position: absolute;
+  bottom: 10px;
+  right: 9px;
+  color: #657993;
+  font-size: 8px;
+}
+.vpn-calculator input {
+  width: 100%;
+  height: 34px;
+  padding: 8px 30px 8px 10px;
+  border: 1px solid #2c3b51;
+  border-radius: 5px;
+  margin-top: 7px;
+  color: #d6e1f0;
+  background: #0b1420;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  box-sizing: border-box;
+  appearance: textfield;
+}
+.vpn-calculator input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.vpn-threshold-input {
+  margin-top: 11px;
+}
+.vpn-threshold-input input {
+  padding-right: 50px;
+}
+.vpn-speed-result {
+  border: 1px solid #365440;
+  border-radius: 7px;
+  background: #192a21;
+  padding: 14px 15px;
+  margin-top: 18px;
+}
+.vpn-speed-result.flagged {
+  background: #2b2022;
+  border-color: #603b36;
+}
+.vpn-speed-result > span {
+  display: block;
+  color: #a4be9a;
+  font-size: 7px;
+  letter-spacing: 1.25px;
+}
+.vpn-speed-result.flagged > span {
+  color: #e7a38c;
+}
+.vpn-speed-result > strong {
+  display: block;
+  color: #ccff6b;
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  margin: 6px 0;
+}
+.vpn-speed-result.flagged > strong {
+  color: #ffc3a2;
+}
+.vpn-speed-result small {
+  font-size: 10px;
+  letter-spacing: 0;
+  color: #bf9787;
+}
+.vpn-speed-result > p {
+  font-size: 8px;
+  color: #96aa92;
+  margin: 0;
+  line-height: 1.5;
+}
+.vpn-speed-result.flagged > p {
+  color: #bc968c;
+}
+.vpn-calc-footnote {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 13px;
+  color: #6d839d;
+  font-size: 8px;
+  line-height: 1.6;
+}
+.vpn-calc-footnote > svg {
+  flex-shrink: 0;
+}
+.vpn-analysis {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 24px;
+  background: linear-gradient(100deg, #15231f, #121c25);
+  border: 1px solid #2c4337;
+  border-radius: 10px;
+}
+.vpn-analysis-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  color: #b5d58e;
+  width: 49px;
+  height: 49px;
+  border-radius: 10px;
+  background: #21362a;
+  border: 1px solid #40543b;
+}
+.vpn-analysis .intel-eyebrow {
+  font-size: 8px;
+  color: #a9c38c;
+  letter-spacing: 1.3px;
+}
+.vpn-analysis h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e3edda;
+  margin: 8px 0;
+}
+.vpn-analysis p {
+  margin: 0;
+  max-width: 870px;
+  font-size: 10px;
+  line-height: 1.8;
+  color: #91a399;
+}
+.vpn-analysis code {
+  color: #b4ccaa;
+  font-size: 9px;
+  background: #25362b;
+  border-radius: 3px;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+.vpn-analysis-tag {
+  color: #9db985;
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 8px;
+  letter-spacing: 1px;
+  border: 1px solid #3d5237;
+  border-radius: 5px;
+  background: #243327;
+  padding: 7px 8px;
+}
+.vpn-event-count {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6f849e;
+  font-size: 9px;
+}
+.vpn-event-count > span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #94ae86;
+}
+.vpn-table td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.vpn-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.vpn-user > span {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 9px;
+  color: #aec9b1;
+  background: #25362f;
+  border: 1px solid #3d5145;
+}
+.vpn-user > div > strong,
+.vpn-table-location > strong {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  color: #ccd8e8;
+}
+.vpn-user > div > small,
+.vpn-table-location > small {
+  display: block;
+  font-size: 8px;
+  color: #70839d;
+  margin-top: 5px;
+}
+.vpn-table-location > strong {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 9px;
+}
+.vpn-table-location > strong > svg {
+  color: #7e93b3;
+}
+.vpn-table-location > small {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 9px;
+}
+.vpn-device {
+  font-size: 9px;
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  color: #9aaac1;
+}
+.vpn-outcome {
+  padding: 4px 7px;
+  font-size: 8px;
+  line-height: 1.5;
+  border-radius: 4px;
+  color: #afdd9c;
+  background: #243c2b;
+  border: 1px solid #36513a;
+  white-space: nowrap;
+}
+.vpn-outcome.step-up {
+  color: #e4c189;
+  background: #382f22;
+  border-color: #57492d;
+}
+.vpn-outcome.blocked,
+.vpn-outcome.revoked {
+  color: #e99696;
+  background: #3b242d;
+  border-color: #58323c;
+}
+.vpn-table .intel-icon-button {
+  border: none;
+  background: none;
+  width: 24px;
+}
+.vpn-selection-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 23px;
+  background: #131e2b;
+}
+.vpn-selection-bar > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 9px;
+  color: #7e93ac;
+}
+.vpn-selection-icon {
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #304356;
+  border-radius: 6px;
+  color: #a0b2c9;
+}
+.vpn-selection-bar strong {
+  color: #c2d3e8;
+  font-weight: 500;
+}
+.vpn-selection-location {
+  color: #7087a3;
+}
+.vpn-primary-button,
+.vpn-secondary-button,
+.vpn-revoke-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid #ccff6b;
+  border-radius: 6px;
+  padding: 9px 12px;
+  background: #ccff6b;
+  color: #1c2916;
+  font-size: 10px;
+  font-weight: 600;
+}
+.vpn-primary-button:hover {
+  background: #d8ff95;
+}
+.vpn-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.vpn-principle {
+  display: flex;
+  gap: 13px;
+  padding: 20px;
+}
+.vpn-principle > span {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  color: #78905e;
+  padding-top: 1px;
+}
+.vpn-principle h4 {
+  margin: 0 0 7px;
+  color: #c0cde0;
+  font-size: 11px;
+  font-weight: 500;
+}
+.vpn-principle p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.8;
+  color: #7588a4;
+}
+.vpn-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #050911b8;
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.vpn-investigation-modal {
+  width: min(640px, 100%);
+  max-height: calc(100vh - 50px);
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 27px 30px;
+  background: #111c2b;
+  border: 1px solid #34465c;
+  box-shadow: 0 35px 130px #0009;
+  border-radius: 14px;
+}
+.vpn-modal-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.vpn-modal-heading .intel-eyebrow {
+  font-size: 9px;
+}
+.vpn-investigation-modal h2 {
+  font-size: 23px;
+  letter-spacing: -0.7px;
+  font-weight: 500;
+  margin: 17px 0 8px;
+}
+.vpn-modal-subtitle {
+  font-size: 11px;
+  color: #8da3c0;
+  margin: 0;
+}
+.vpn-modal-subtitle > span {
+  margin: 0 6px;
+  color: #4c6684;
+}
+.vpn-evidence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-top: 23px;
+  border: 1px solid #2b3c52;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.vpn-evidence-grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 17px;
+  background: #0e1826;
+}
+.vpn-evidence-grid > div:nth-child(odd) {
+  border-right: 1px solid #2b3c52;
+}
+.vpn-evidence-grid > div:nth-child(-n + 2) {
+  border-bottom: 1px solid #2b3c52;
+}
+.vpn-evidence-grid span {
+  font-size: 9px;
+  color: #7790b0;
+}
+.vpn-evidence-grid strong {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: #b9cbe2;
+}
+.vpn-investigation-modal > h4 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 23px 0 13px;
+}
+.vpn-evidence-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.vpn-evidence-list > li {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  color: #95aac7;
+  line-height: 1.7;
+}
+.vpn-evidence-list > li > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #aecf89;
+}
+.vpn-evidence-list > li:nth-child(2) > svg {
+  color: #e9ac86;
+}
+.vpn-investigation-next {
+  padding: 16px 17px;
+  margin-top: 22px;
+  border-radius: 7px;
+  background: #192a23;
+  border: 1px solid #304a38;
+}
+.vpn-investigation-next .intel-small-label {
+  color: #a3c285;
+  font-size: 8px;
+}
+.vpn-investigation-next p {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #95ac9d;
+  margin: 0;
+}
+.vpn-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+.vpn-secondary-button {
+  border-color: #334961;
+  background: #1b2b3e;
+  color: #b6cce6;
+  font-size: 10px;
+  font-weight: 500;
+  flex: 1;
+}
+.vpn-secondary-button:hover {
+  background: #24384f;
+}
+.vpn-revoke-button {
+  border-color: #81443e;
+  background: #3c2728;
+  color: #ffb49c;
+  font-size: 10px;
+  font-weight: 500;
+  flex: 1;
+}
+.vpn-revoke-button:hover {
+  background: #4b2c2c;
+}
+.vpn-revoke-button:disabled {
+  opacity: 0.65;
+  cursor: default;
+  background: #25392a;
+  color: #b4d9a1;
+  border-color: #496544;
+}
+.vpn-modal-disclaimer {
+  margin: 12px 0 0;
+  color: #6e85a3;
+  font-size: 9px;
+  line-height: 1.6;
+}
+@media (min-width: 1550px) {
+  .intel-workspace {
+    grid-template-columns: minmax(0, 1fr) 365px;
+  }
+  .intel-overview-metrics {
+    gap: 45px;
+  }
+  .intel-orbit {
+    left: 48%;
+  }
+  .vpn-top-grid {
+    grid-template-columns: minmax(0, 1fr) 335px;
+  }
+  .vpn-world-map {
+    min-height: 245px;
+  }
+  .intel-table td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .intel-workspace {
+    grid-template-columns: minmax(0, 1fr) 295px;
+  }
+  .intel-overview-metrics {
+    gap: 15px;
+  }
+  .intel-overview-metrics > div {
+    min-width: 77px;
+  }
+  .intel-overview-metrics strong {
+    font-size: 27px;
+  }
+  .intel-orbit {
+    left: 45%;
+    opacity: 0.35;
+  }
+  .intel-table-tactic {
+    font-size: 9px;
+  }
+  .intel-table td,
+  .intel-table th {
+    padding-left: 11px;
+    padding-right: 11px;
+  }
+  .intel-table th:first-child,
+  .intel-table td:first-child {
+    padding-left: 18px;
+  }
+  .intel-table th:last-child,
+  .intel-table td:last-child {
+    padding-right: 18px;
+  }
+  .intel-panel-heading,
+  .intel-detail {
+    padding: 19px;
+  }
+  .intel-toolbar {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+  .intel-table-tactic {
+    display: inline-block;
+    max-width: 83px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .vpn-top-grid {
+    grid-template-columns: minmax(0, 1fr) 275px;
+    gap: 16px;
+  }
+  .vpn-calculator {
+    padding: 19px;
+  }
+  .vpn-route-summary {
+    gap: 8px;
+    padding: 15px;
+  }
+  .vpn-route-summary .vpn-same-ip {
+    font-size: 7px;
+  }
+  .vpn-analysis {
+    padding: 20px;
+    gap: 15px;
+  }
+  .vpn-analysis-tag {
+    display: none;
+  }
+  .vpn-selection-location {
+    display: none;
+  }
+  .vpn-bottom-grid {
+    gap: 12px;
+  }
+  .vpn-principle {
+    padding: 16px;
+    gap: 9px;
+  }
+}
+@media (max-width: 1000px) {
+  .intel-workspace {
+    grid-template-columns: 1fr;
+  }
+  .intel-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    align-items: start;
+  }
+  .intel-detail-top,
+  .intel-watch-button {
+    grid-column: 1/-1;
+  }
+  .intel-detail-icon {
+    grid-column: 1;
+    margin-bottom: 13px;
+  }
+  .intel-detail-value,
+  .intel-detail-type {
+    grid-column: 1;
+  }
+  .intel-confidence {
+    grid-column: 2;
+    grid-row: 2/4;
+    margin-top: 23px;
+  }
+  .intel-detail-stats {
+    grid-column: 2;
+    grid-row: 4/6;
+    margin-top: 0;
+  }
+  .intel-context-block {
+    grid-column: 1/-1;
+    margin-top: 16px;
+  }
+  .intel-overview {
+    padding: 26px;
+  }
+  .intel-overview-copy {
+    max-width: 55%;
+  }
+  .intel-overview-copy p {
+    font-size: 11px;
+    max-width: 285px;
+  }
+  .intel-overview-metrics {
+    gap: 16px;
+  }
+  .intel-overview-metrics > div {
+    min-width: 70px;
+  }
+  .intel-overview-metrics span {
+    font-size: 8px;
+  }
+  .intel-orbit {
+    display: none;
+  }
+  .intel-feed-strip > div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .vpn-top-grid {
+    grid-template-columns: 1fr;
+  }
+  .vpn-calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 22px;
+  }
+  .vpn-calculator > .intel-eyebrow,
+  .vpn-calculator > h3,
+  .vpn-calculator > p,
+  .vpn-input-grid,
+  .vpn-threshold-input {
+    grid-column: 1;
+  }
+  .vpn-calculator .vpn-speed-result {
+    grid-column: 2;
+    grid-row: 2/6;
+    margin: 17px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+  }
+  .vpn-speed-result > strong {
+    font-size: 32px;
+    margin: 12px 0;
+  }
+  .vpn-calculator .vpn-calc-footnote {
+    grid-column: 2;
+    grid-row: 6;
+  }
+  .vpn-world-map {
+    max-height: 300px;
+  }
+  .vpn-route-summary {
+    padding: 17px 23px;
+  }
+  .vpn-route-summary .vpn-same-ip {
+    font-size: 9px;
+  }
+  .vpn-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .vpn-principle {
+    padding: 17px;
+  }
+  .vpn-principle p {
+    font-size: 10px;
+  }
+  .vpn-status-strip {
+    gap: 13px;
+  }
+}
+@media (max-width: 600px) {
+  .intel-page,
+  .vpn-page {
+    gap: 16px;
+  }
+  .intel-overview {
+    display: block;
+    padding: 22px;
+  }
+  .intel-overview-copy {
+    max-width: none;
+  }
+  .intel-overview h2 {
+    font-size: 23px;
+  }
+  .intel-overview-copy p {
+    max-width: none;
+    font-size: 11px;
+  }
+  .intel-overview-metrics {
+    margin-top: 25px;
+    gap: 28px;
+  }
+  .intel-overview-metrics > div {
+    min-width: 68px;
+  }
+  .intel-overview-metrics strong {
+    font-size: 26px;
+  }
+  .intel-source-pill {
+    font-size: 8px;
+    margin-top: 12px;
+  }
+  .intel-overview-metrics span {
+    font-size: 8px;
+  }
+  .intel-feed-strip {
+    padding: 12px;
+    gap: 9px;
+  }
+  .intel-feed-strip > div > span {
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .intel-feed-strip strong {
+    font-size: 10px;
+  }
+  .intel-curated-tag {
+    font-size: 6px !important;
+    padding: 4px 5px;
+  }
+  .intel-toolbar {
+    flex-wrap: wrap;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .intel-search {
+    flex-basis: 100%;
+  }
+  .intel-toolbar select {
+    width: 100%;
+    max-width: none;
+  }
+  .intel-panel-heading {
+    padding: 18px 16px;
+  }
+  .intel-tabs {
+    padding: 0 16px;
+  }
+  .intel-table-footer {
+    padding: 13px 16px;
+    flex-wrap: wrap;
+    font-size: 8px;
+  }
+  .intel-detail {
+    display: block;
+    padding: 20px;
+  }
+  .intel-confidence {
+    margin-top: 20px;
+  }
+  .intel-detail-stats {
+    margin-top: 20px;
+  }
+  .intel-detail-value h3 {
+    font-size: 15px;
+  }
+  .intel-notice {
+    bottom: 16px;
+    right: 16px;
+    font-size: 10px;
+    padding: 12px 14px;
+  }
+  .vpn-status-strip {
+    flex-wrap: wrap;
+    gap: 9px;
+    font-size: 8px;
+  }
+  .vpn-status-strip b {
+    font-size: 7px;
+  }
+  .vpn-status-strip > span:nth-child(2) {
+    display: none;
+  }
+  .vpn-route-panel .intel-panel-heading {
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .vpn-route-panel .intel-panel-heading h3 {
+    font-size: 16px;
+  }
+  .vpn-route-panel .intel-eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+  .vpn-alert-label {
+    font-size: 7px;
+    padding: 5px;
+    gap: 4px;
+  }
+  .vpn-alert-label > svg {
+    width: 11px;
+  }
+  .vpn-world-map {
+    min-height: 145px;
+  }
+  .vpn-route-summary {
+    padding: 13px 16px;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 8px;
+    justify-content: flex-start;
+  }
+  .vpn-route-summary .vpn-same-ip {
+    font-size: 8px;
+  }
+  .vpn-calculator {
+    display: block;
+    padding: 20px;
+  }
+  .vpn-calculator .vpn-speed-result {
+    margin-top: 18px;
+    padding: 18px;
+  }
+  .vpn-speed-result > strong {
+    font-size: 30px;
+  }
+  .vpn-analysis {
+    padding: 18px;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .vpn-analysis-icon {
+    width: 33px;
+    height: 33px;
+    border-radius: 7px;
+  }
+  .vpn-analysis-icon > svg {
+    width: 18px;
+  }
+  .vpn-analysis .intel-eyebrow {
+    font-size: 7px;
+    letter-spacing: 0.8px;
+  }
+  .vpn-analysis h3 {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .vpn-analysis p {
+    font-size: 9px;
+  }
+  .vpn-analysis code {
+    font-size: 8px;
+  }
+  .vpn-event-count {
+    font-size: 8px;
+    white-space: nowrap;
+  }
+  .vpn-signins .intel-panel-heading p {
+    max-width: 180px;
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .vpn-selection-bar {
+    padding: 13px 16px;
+    flex-wrap: wrap;
+  }
+  .vpn-selection-bar > div {
+    font-size: 9px;
+  }
+  .vpn-primary-button {
+    margin-left: auto;
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+  .vpn-investigation-modal {
+    padding: 22px 20px;
+  }
+  .vpn-modal-backdrop {
+    padding: 14px;
+  }
+  .vpn-investigation-modal h2 {
+    font-size: 20px;
+  }
+  .vpn-modal-heading .intel-eyebrow {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .vpn-evidence-grid > div {
+    padding: 12px;
+  }
+  .vpn-evidence-grid strong {
+    font-size: 9px;
+  }
+  .vpn-evidence-list > li {
+    font-size: 10px;
+  }
+  .vpn-modal-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .vpn-modal-actions button {
+    padding: 11px;
+  }
+  .intel-footnote {
+    font-size: 8px;
+  }
+}

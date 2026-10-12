@@ -1,0 +1,5 @@
+health
+robots.txt
+admin
+api/status
+missing-example

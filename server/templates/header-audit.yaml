@@ -1,0 +1,17 @@
+id: aegis-lab-header-audit
+
+info:
+  name: AEGIS local lab Content-Security-Policy audit
+  author: aegis-lab
+  severity: info
+  description: Read-only GET request checking for an absent Content-Security-Policy header in the local training lab.
+  tags: lab,headers
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/"
+    matchers:
+      - type: dsl
+        dsl:
+          - "status_code == 200 && !contains(tolower(all_headers), 'content-security-policy:')"

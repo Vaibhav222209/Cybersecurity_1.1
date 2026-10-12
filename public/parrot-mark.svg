@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none" role="img" aria-labelledby="parrot-title parrot-desc">
+<title id="parrot-title">Aegis Parrot terminal emblem</title>
+<desc id="parrot-desc">An original geometric parrot with a swept three-feather crest, a bright eye, and a hooked beak.</desc>
+<defs><linearGradient id="feather" x1="27" y1="23" x2="68" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#ccff6b"/><stop offset="1" stop-color="#a4d855"/></linearGradient></defs>
+<path d="M26 31 19 18 42 26 34 11 55 22 54 10 72 26" stroke="#5cc8ec" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26 34 43 24 64 25 77 34 71 49 57 58 53 73 28 84 35 63 22 54Z" fill="url(#feather)"/>
+<path d="m70 30 15 10-2 14-12 13 2-19-8-7Z" fill="#5cc8ec"/>
+<path d="m76 46 9-6-2 14-12 13 2-12Z" fill="#318da8"/>
+<path d="m26 51 19 7-10 12-7 14 4-22Z" fill="#17302c"/>
+<path d="m36 72 17-8-5 11-20 9" stroke="#18241e" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="m38 43 10-7 13 3-8 12Z" fill="#1c3026" fill-opacity=".19"/>
+<circle cx="59" cy="36" r="5.5" fill="#18241e"/><circle cx="60.2" cy="34.9" r="1.5" fill="#eaffd7"/>
+<path d="m26 39 9-5" stroke="#ecffd8" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"/>
+</svg>

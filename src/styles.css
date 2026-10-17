@@ -124,6 +124,7 @@ pre {
 .sidebar {
   position: fixed;
   inset: 0 auto 0 0;
+  height: 100dvh;
   width: 232px;
   background: #0c121e;
   border-right: 1px solid #1c2637;
@@ -131,6 +132,19 @@ pre {
   z-index: 30;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.sidebar > .brand,
+.sidebar > .workspace-switch,
+.sidebar-bottom {
+  flex-shrink: 0;
+}
+.sidebar > nav {
+  flex: 1 1 auto;
+  min-height: 64px;
+  overflow-y: auto;
 }
 .brand {
   display: flex;
@@ -2688,7 +2702,7 @@ tbody tr.row-selected {
     transform: translateX(-100%);
     width: 232px;
     transition: transform 0.2s;
-    padding: 25px 18px 0;
+    padding: 25px 18px env(safe-area-inset-bottom, 0px);
   }
   .sidebar.mobile-open {
     transform: translateX(0);
@@ -3197,6 +3211,24 @@ tbody tr.row-selected {
   }
   .search-results button {
     font-size: 11px;
+  }
+}
+@media (max-height: 600px) {
+  .sidebar {
+    padding-top: 16px;
+  }
+  .workspace-switch {
+    margin-top: 16px;
+  }
+  .sidebar-bottom {
+    padding-top: 12px;
+  }
+  .system-status {
+    margin-bottom: 12px;
+  }
+  .profile {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
